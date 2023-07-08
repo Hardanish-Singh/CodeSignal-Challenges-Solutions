@@ -1,5 +1,6 @@
 // CodeSignal: https://app.codesignal.com/arcade/intro/level-2/xskq4ZxLyqQMCLshr
-function solution(matrix) {
+
+const solution = (matrix) => {
     let columns = [];
     let sum = 0;
 
@@ -25,4 +26,4 @@ function solution(matrix) {
         }
     }
     return sum;
-}
+};
