@@ -14,7 +14,9 @@ def solution(sequence):
     for i in range(0, len(sequence) - 1):
         if sequence[i] >= sequence[i+1]:
             flag = isIncreasingSequence(value, flag, i, sequence)
-            if flag == True: break
+            if flag == True: 
+                break
             flag = isIncreasingSequence(value, flag, i + 1, sequence)
-            if flag == True: break
+            if flag == True: 
+                break
     return flag
