@@ -1,4 +1,4 @@
-// CodeSignal: https://app.codesignal.com/arcade/intro/level-2/xzKiBHjhoinnpdh6m/solutions
+// CodeSignal: https://app.codesignal.com/arcade/intro/level-2/xzKiBHjhoinnpdh6m/
 
 const solution = (inputArray) => {
     let maxProduct = Number.NEGATIVE_INFINITY;
