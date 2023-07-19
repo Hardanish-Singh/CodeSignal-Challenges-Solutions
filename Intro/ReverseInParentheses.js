@@ -4,14 +4,14 @@ const solution = (inputString) => {
     let lastIndex = inputString.indexOf(")");
     let firstIndex = inputString.lastIndexOf("(", lastIndex);
     while (firstIndex != -1) {
-        inputString =
-            inputString.slice(0, firstIndex) +
-            inputString
-                .slice(firstIndex + 1, lastIndex)
-                .split("")
-                .reverse()
-                .join("") +
-            inputString.slice(lastIndex + 1);
+        let before = inputString.slice(0, firstIndex);
+        let reversed = inputString
+            .slice(firstIndex + 1, lastIndex)
+            .split("")
+            .reverse()
+            .join("");
+        let after = inputString.slice(lastIndex + 1);
+        inputString = before + reversed + after;
         lastIndex = inputString.indexOf(")");
         firstIndex = inputString.lastIndexOf("(", lastIndex);
     }
