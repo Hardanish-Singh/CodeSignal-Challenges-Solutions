@@ -18,6 +18,7 @@ const solution = (inputString) => {
                 .join("");
             inputString = inputString.slice(0, index) + temp + inputString.slice(lastIndex + 1);
             i = -1;
+            stack = [];
         }
     }
     return inputString;
