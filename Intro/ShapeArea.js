@@ -9,6 +9,7 @@ var solution = (n) => {
     return area;
 };
 
+// Solution 2
 var solution = (n) =>
     Array.from({ length: n }, (_, i) => i + 1)
         .reverse()
