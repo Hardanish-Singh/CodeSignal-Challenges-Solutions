@@ -1,6 +1,6 @@
 // CodeSignal: https://app.codesignal.com/arcade/intro/level-2/xzKiBHjhoinnpdh6m/
 
-// Solution 1
+// Solution 12
 var solution = (inputArray) => {
     let maxProduct = Number.NEGATIVE_INFINITY;
     for (let i = 0; i < inputArray.length; i++) {
