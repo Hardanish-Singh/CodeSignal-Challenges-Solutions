@@ -37,3 +37,16 @@ var solution = (statues) =>
             }
             return accumulator;
         }, 0);
+
+// Solution 4
+// prettier-ignore
+var solution = (statues) =>
+    Array.from({ length: Math.max(...statues) - Math.min(...statues) + 1 }, (_, i) => Math.min(...statues) + i)
+        .reduce( (accumulator, currentValue) => {
+            if (!statues.includes(currentValue)) {
+                accumulator++;
+            }
+            return accumulator;
+        },
+        0
+    );
