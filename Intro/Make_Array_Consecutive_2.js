@@ -25,3 +25,15 @@ var solution = (statues) => {
             return accumulator;
         }, 0);
 };
+
+// Solution 3
+var solution = (statues) =>
+    Array(Math.max.apply(null, statues) - Math.min.apply(null, statues) + 1)
+        .fill()
+        .map((_, idx) => Math.min.apply(null, statues) + idx)
+        .reduce((accumulator, currentValue) => {
+            if (!statues.includes(currentValue)) {
+                accumulator++;
+            }
+            return accumulator;
+        }, 0);
