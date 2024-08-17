@@ -17,6 +17,7 @@ const solution = (s1, s2) => {
                 count += Math.min(value1, value2);
                 delete map1[key1];
                 delete map2[key2];
+                break;
             }
         }
     }
