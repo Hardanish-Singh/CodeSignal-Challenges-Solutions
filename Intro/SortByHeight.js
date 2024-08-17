@@ -1,6 +1,7 @@
 // CodeSignal: https://app.codesignal.com/arcade/intro/level-3/D6qmdBL2NYz49XHwM/
 
-const solution = (a) => {
+// Solution 1
+var solution = (a) => {
     let filteredArray = a.filter((a) => a != -1).sort((a, b) => a - b);
     let index = 0;
     for (let i = 0; i < a.length; i++) {
@@ -9,4 +10,15 @@ const solution = (a) => {
         }
     }
     return a;
+};
+
+// Solution 2
+var solution = (a) => {
+    let filteredArray = a.filter((a) => a != -1).sort((a, b) => a - b);
+    return a.reduce((accumulator, currentValue, currentIndex, a) => {
+        if (currentValue != -1) {
+            accumulator[currentIndex] = filteredArray.shift();
+        }
+        return accumulator;
+    }, a);
 };
