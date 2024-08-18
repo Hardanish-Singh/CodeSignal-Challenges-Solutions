@@ -5,11 +5,12 @@ const solution = (inputString) => {
     let firstIndex = inputString.lastIndexOf("(", lastIndex);
     while (firstIndex != -1) {
         let before = inputString.slice(0, firstIndex);
+        // prettier-ignore
         let reversed = inputString
-            .slice(firstIndex + 1, lastIndex)
-            .split("")
-            .reverse()
-            .join("");
+                                .slice(firstIndex + 1, lastIndex)
+                                .split("")
+                                .reverse()
+                                .join("");
         let after = inputString.slice(lastIndex + 1);
         inputString = before + reversed + after;
         lastIndex = inputString.indexOf(")");
