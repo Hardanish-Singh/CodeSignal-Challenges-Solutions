@@ -1,6 +1,5 @@
 // CodeSignal: https://app.codesignal.com/arcade/intro/level-3/9DgaPsE2a7M6M2Hu6/
 
-// Solution 1
 const solution = (inputString) => {
     let lastIndex = inputString.indexOf(")");
     let firstIndex = inputString.lastIndexOf("(", lastIndex);
