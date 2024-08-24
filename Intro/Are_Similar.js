@@ -23,12 +23,11 @@ var solution = (a, b) => {
     if (!(JSON.stringify(A) === JSON.stringify(B))) {
         return false;
     }
+    // prettier-ignore
     return a.reduce((accumulator, _, currentIndex, a) => {
-        if (a[currentIndex] !== b[currentIndex]) {
+        if(a[currentIndex] !== b[currentIndex]) {
             accumulator++;
         }
         return accumulator;
-    }, 0) > 2
-        ? false
-        : true;
+    }, 0) > 2 ? false : true;
 };
