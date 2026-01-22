@@ -8,7 +8,7 @@ This repository serves as a personal reference and a resource for others learnin
 
 The solutions are organized by the CodeSignal Arcade mode or challenge category:
 
--   **[Intro](./Intro)**: Solutions to the "Intro" arcade challenges.
+- **[Intro](./Intro)**: Solutions to the "Intro" arcade challenges.
 
 ## 🚀 Getting Started
 
@@ -25,11 +25,3 @@ The solutions are organized by the CodeSignal Arcade mode or challenge category:
     ```bash
     node Intro/Add.js
     ```
-
-## 🤝 Contributing
-
-Contributions are welcome! If you have a more optimized solution or want to add a solution in another language, feel free to submit a Pull Request.
-
-## 📝 Disclaimer
-
-These solutions are for educational purposes. I highly recommend trying to solve the problems yourself before looking at the solutions to maximize your learning.
