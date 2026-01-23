@@ -13,7 +13,7 @@ var solution = (a, b) => {
             swapCount++;
         }
     }
-    return swapCount > 2 ? false : true;
+    return swapCount <= 2;
 };
 
 // Solution 2
@@ -29,5 +29,5 @@ var solution = (a, b) => {
             accumulator++;
         }
         return accumulator;
-    }, 0) > 2 ? false : true;
+    }, 0) <= 2;
 };
