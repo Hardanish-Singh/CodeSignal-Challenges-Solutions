@@ -26,6 +26,7 @@ var solution = (matrix) => {
             }
         }
     }
+
     return sum;
 };
 
